@@ -1,4 +1,4 @@
-# react-scroll-arrow
+# react-scroll-arrow v0.0.2
 
 This is the source code for the react-scroll-arrow npm package. 
 
