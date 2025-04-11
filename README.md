@@ -57,7 +57,7 @@ function App() {
 export default App
 ```
 
-You can see the code for `TestScrollArrow` in the `example/src/components` directory of the repo.
+You can see the code for `TestScrollArrow` in the [`example/src/components`](https://github.com/macro6461/react-scroll-arrow/tree/main/example) directory of the repo.
 
 ## License
 
