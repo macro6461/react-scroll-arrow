@@ -1,0 +1,52 @@
+{
+  "name": "react-scroll-arrow",
+  "version": "0.0.1",
+  "main": "dist/ReactScrollArrow.js",
+  "module": "dist/ReactScrollArrow.esm.js",
+  "types": "dist/ReactScrollArrow.d.ts",
+  "type": "module",
+  "files": [
+        "README.md",
+        "dist",
+        "tsconfig.json",
+        "CHANGELOG.md",
+        "LICENSE",
+        "assets"
+  ],
+  "exports": {
+      ".": "./dist/ReactScrollArrow.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build":  "yarn clean && yarn build:css && yarn tsc && tsc -p tsconfig.build.json",
+    "build:css": "postcss src/**/*.css --dir dist",
+    "build:ts": "npx tsc",
+    "clean": "rm -rf dist && rm -rf node_modules $$ rm yarn.lock && yarn",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "autoprefixer": "^10.4.20",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "cssnano": "^7.0.6",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0"
+  }
+}
