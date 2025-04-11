@@ -30,6 +30,12 @@ def publish_to_npm():
     else:
         print("yarn.lock found, proceeding to publish.")
 
+    print("Running yarn build...")
+    build_result = subprocess.run(["yarn", "build"], check=False)
+    if build_result.returncode != 0:
+        print("Build failed. Aborting publish.")
+        exit(-1)
+
     # Run npm publish --dry-run to check for any issues
     print("Performing npm publish dry-run...")
     dry_run_result = subprocess.run(["npm", "publish", "--dry-run"], check=False)
